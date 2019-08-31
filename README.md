@@ -15,7 +15,7 @@ FIXAT provides storage facilities for locations and types of assets. The print f
 - Sum Of Years (SYD)
 - Double Decline Balance (DDB)
 
-Dependencies
+## Dependencies
 - altgraph 0.16.1
 - cycler 0.10.0
 - fpdf 1.7.2
