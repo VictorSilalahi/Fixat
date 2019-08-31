@@ -10,9 +10,10 @@ FIXAT is a simple application that is used to store fixed asset data. Like:
 - Securities
 
 FIXAT provides storage facilities for locations and types of assets. The print function is also activated where the asset report can be printed in excel and pdf format. This application also provides facilities for adding asset types and adding asset locations. Equally important, this application provides 3 depreciation formulas, namely:
-•	Straight Line (SLN)
-•	Sum Of Years (SYD)
-•	Double Decline Balance (DDB)
+
+- Straight Line (SLN)
+- Sum Of Years (SYD)
+- Double Decline Balance (DDB)
 
 Dependencies
 - altgraph 0.16.1
