@@ -2,7 +2,7 @@
 Fixed Asset Management Simple Software
 
 FIXAT is a simple application that is used to store fixed asset data. Like:
-- Soil
+- Lands
 - Building
 - Engine
 - transportation
