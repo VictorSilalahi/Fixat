@@ -323,7 +323,8 @@ class MainWin(QtWidgets.QWidget):
                     sumOfYears = sumOfYears + i
                 for j in range(deltY):
                     lastVal = lastVal - (lastVal*(i/sumOfYears))
-            
+        if lastVal<0:
+            lastVal=0
         return lastVal
     
     def addItem(self):
