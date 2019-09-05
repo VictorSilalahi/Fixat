@@ -56,7 +56,7 @@ class MainWin(QtWidgets.QWidget):
         self.tabs.addTab(self.tabByLocation,"By Location")
         
         lOutCategory = QtWidgets.QGridLayout()
-        self.figCategory = plt.figure()
+        self.figCategory = plt.figure(figsize=(1,1))
         self.canvCategory = FigureCanvas(self.figCategory)
         lOutCategory.addWidget(self.canvCategory)
         self.ax1 = self.figCategory.add_subplot(111)
@@ -65,7 +65,7 @@ class MainWin(QtWidgets.QWidget):
         self.tabByCategory.setLayout(lOutCategory)
 
         lOutLocation = QtWidgets.QGridLayout()
-        self.figLocation = plt.figure()
+        self.figLocation = plt.figure(figsize=(1,1))
         self.canvLocation = FigureCanvas(self.figLocation)
         lOutLocation.addWidget(self.canvLocation)
         self.ax2 = self.figLocation.add_subplot(111)
