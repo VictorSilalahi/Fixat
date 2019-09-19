@@ -14,7 +14,8 @@ class winAdd(QtWidgets.QDialog):
     def setWin(self):
         self.setWindowTitle("Add new asset")
         self.setWindowFlag(QtCore.Qt.WindowStaysOnTopHint)
-    
+        self.setWindowModality(QtCore.Qt.ApplicationModal)
+        
         # layout seting
         self.winLayout = QtWidgets.QGridLayout(self)
     
@@ -140,13 +141,16 @@ class winAdd(QtWidgets.QDialog):
         if (self.txtSN.text()==""):
             self.lblWarning.setText("Please type asset serial number!")
             self.txtSN.setFocus()
-            return        if (self.txtAssetDesc.text()==""):
+            return
+        if (self.txtAssetDesc.text()==""):
             self.lblWarning.setText("Please type asset Description!")
             self.txtAssetDesc.setFocus()
-            return        if (self.txtAcqCost.text()==""):
+            return
+        if (self.txtAcqCost.text()==""):
             self.lblWarning.setText("Please type acquairing cost!")
             self.txtAcqCost.setFocus()
-            return        if (self.txtAcqCost.text().isnumeric()==False):
+            return
+        if (self.txtAcqCost.text().isnumeric()==False):
             self.lblWarning.setText("Please type acquairing cost!")
             self.txtAcqCost.setFocus()
             return
